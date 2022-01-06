@@ -1,5 +1,5 @@
 module.exports = {
-env: {
+	env: {
 		browser: true,
 		es2021: true,
 	},
@@ -10,7 +10,7 @@ env: {
 	},
 	rules: {
 		quotes: ["error", "double", { allowTemplateLiterals: true }],
-		indent: ["error", "tab", 2],
+		indent: ["error", "tab"],
 		// "no-unused-vars": "off",
 	},
 };
