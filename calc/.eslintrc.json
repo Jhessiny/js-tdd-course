@@ -11,18 +11,18 @@
 	"rules": {
 		"quotes": ["error", "double", { "allowTemplateLiterals": true }],
 		"indent": [2, "tab"],
-		"no-tabs": 0
+		"no-tabs": 0,
+		"object-curly-newline": [
+			"error",
+			{
+				"ObjectExpression": "always",
+				"ObjectPattern": { "multiline": true },
+				"ImportDeclaration": "never",
+				"ExportDeclaration": { "multiline": false }
+			}
+		]
 		// "no-ternary": 0
 		// "no-unused-vars": "off",
 	},
-	"ignorePatterns": ["tests/**/*.spec.js"],
-	"object-curly-newline": [
-		"error",
-		{
-			"ObjectExpression": "always",
-			"ObjectPattern": { "multiline": true },
-			"ImportDeclaration": "never",
-			"ExportDeclaration": { "multiline": true, "minProperties": 3 }
-		}
-	]
+	"ignorePatterns": ["tests/**/*.spec.js"]
 }
