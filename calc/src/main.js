@@ -23,7 +23,7 @@ function foo3() {
 	return "oi";
 }
 
-function foo5() {
+function foo6() {
 	return "oi";
 }
 
