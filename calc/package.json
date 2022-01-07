@@ -7,8 +7,7 @@
 		"lint": "npx eslint src/*.js",
 		"test": "npx mocha tests/**/*.spec.js --require babel-register",
 		"test:tdd": "npx mocha --watch tests/**/*.spec.js --require babel-register",
-		"test:coverage": "nyc npm test",
-		"prepare": "husky install"
+		"test:coverage": "nyc npm test"
 	},
 	"husky": {
 		"hooks": {
