@@ -23,4 +23,8 @@ function foo3() {
 	return "oi";
 }
 
+function foo4() {
+	return "oi";
+}
+
 export { sum, sub, div, multi, foo, foo2, foo3 };
