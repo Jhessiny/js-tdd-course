@@ -5,10 +5,14 @@
 	"main": "index.js",
 	"scripts": {
 		"lint": "npx eslint src/*.js",
-		"prepush": "npm run lint && npm run test:coverage",
 		"test": "npx mocha tests/**/*.spec.js --require babel-register",
 		"test:tdd": "npx mocha --watch tests/**/*.spec.js --require babel-register",
 		"test:coverage": "nyc npm test"
+	},
+	"husky": {
+		"hooks": {
+			"pre-push": "npm run lint && npm run test:coverage"
+		}
 	},
 	"nyc": {
 		"functions": 80,
