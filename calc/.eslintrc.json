@@ -15,5 +15,14 @@
 		// "no-ternary": 0
 		// "no-unused-vars": "off",
 	},
-	"ignorePatterns": ["tests/**/*.spec.js"]
+	"ignorePatterns": ["tests/**/*.spec.js"],
+	"object-curly-newline": [
+		"error",
+		{
+			"ObjectExpression": "always",
+			"ObjectPattern": { "multiline": true },
+			"ImportDeclaration": "never",
+			"ExportDeclaration": { "multiline": true, "minProperties": 3 }
+		}
+	]
 }
